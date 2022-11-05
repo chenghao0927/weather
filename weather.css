@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-image: url(./WeatherCard-img/Earth.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAV */
+.nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.6;
+    background-color: rgb(255, 255, 255);
+}
+
+/* NAV按鈕 */
+.news {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    color: rgb(243, 243, 243);
+    border: 3px solid rgb(0, 255, 229);
+    background-color: rgb(49, 44, 62);
+    cursor: pointer;
+}
+
+.news:not([disabled]):hover {
+    color: rgb(0, 106, 255);
+    background-color: transparent;
+    transform: translateY(-5px);
+    text-shadow: 0 10px 3px rgba(0, 47, 255, 0.5);
+}
+
+.container {
+
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(81, 81, 81);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+}
